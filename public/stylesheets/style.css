@@ -1,0 +1,46 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+.card .card-image .image img {
+  height: 450px;
+  width: 630px;
+}
+.navbar-brand .navbar-item img{
+  width: 80px;
+  height: 80px;
+
+}
+
+input {
+  font-family: "Oswald", sans-serif;
+}
+.uploader {
+  cursor: pointer !important;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.chooseFile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  padding-left: 200px;
+  margin-right: -200px;
+}
+
+#thumbnail {
+  width: 25%;
+  margin-top: 10px;
+  cursor: pointer;
+  height: auto;
+
+}
+
+.logo {
+text-align: center;
+
+}

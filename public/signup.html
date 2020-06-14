@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Dairy Sign Up</title>
+    <!-- Placing Favicon on top of tab -->
+    <link rel="icon" type="image/png" href="logo/FOODDIARY LOGO.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="stylesheets/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="hero is-danger has-text-centered">
+      <div class="hero-body"> 
+            <img alt="logo image" src="logo/FOODDIARY LOGO.png" width="200" height="200" />
+      </div>
+    </section>
+          <div class="hero-body">
+            <div class="container has-text-centered">
+      <h1 class="title">
+     Welcome to the food diary.
+      </h1>
+    </div>
+  </div>
+
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+  
+          <form class="signup">
+              <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input id="email-input" class="input" type="email" placeholder="Email">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input id="password-input" class="input" type="password" placeholder="Password">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+            <div
+              style="display: none"
+              id="alert"
+              class="alert alert-danger"
+              role="alert"
+            >
+              <span
+                class="glyphicon glyphicon-exclamation-sign"
+                aria-hidden="true"
+              >
+              </span>
+              <span class="sr-only">Account is already taken</span>
+            </div>
+            <div class="field is-grouped is-grouped-centered">
+              <p class="control">
+               <button class="button is-danger" type="submit">  
+                  Sign Up </button>
+              </p>
+              <p class="control">
+                <a  href="login.html" class="button is-light">
+                  Login
+                </a>
+              </p>
+            </div>
+          </form>
+       </section>
+      </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+  </body>
+</html>

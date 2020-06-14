@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload New Entry</title>
+    <link rel = "icon" type = "image/png" href = "logo/FOODDIARY LOGO.png">
+    <link rel = "apple-touch-icon" type = "logo/FOODDIARY LOGO" href = "logo/FOODDIARY LOGO.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    
+</head>
+<body>
+  <form class="foodUpload" id="uploadFood">
+    <section class="hero is-danger is-small">
+        <!-- Hero head: will stick at the top -->
+        
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <img alt="logo image" src="logo/FOODDIARY LOGO.png" width="200" height="200">
+            <h1 class="title">
+              My Food Diary
+            </h1>
+           
+
+          </div>
+        </div>
+      
+        <!-- Hero footer: will stick at the bottom -->
+        <nav class="tabs is-centered is-medium">
+            <div class="container">
+              <ul>
+                <li class="is-active"><a href="recents.html">Home</a></li>
+                <li class="is-active"><a href="favorites.html">Favorites</a></li>
+                <li class="is-active"><a href="upload.html">Upload New</a></li>
+                <li class="is-active"><a href="login.html">Log Out</a></li>
+               
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+    <section class = "section">
+        <div class = "container has-text-centered">
+        <span class = "title">
+           Upload New Meal
+        </span>
+        <br>
+
+
+        <section class="hero is-light">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+          
+          <div class = "field">
+            <label class = "label">Name of Food</label>
+            
+            <div class = "control">
+                <input class = "input" id="foodName" type = "text" placeholder = "name of your delicious food...">
+            </div>
+          </div>
+         
+          <div class="field">
+              <label class="label">Notes</label>
+              <div class="control">
+                <input class="input" id="foodNotes" type="text" placeholder="What did you love about it?">
+              </div>
+            </div>
+            
+            <div class = "field">
+                <label class = "label">Restaurant</label>
+                
+                <div class = "control">
+                    <input class = "input" id="resturantName" type = "text" placeholder = "enter the name of the Restaurant...">
+                </div>
+              </div>
+<!-- 
+          <span class = "is-size-5">
+            Is this meal a Favorite?
+          </span>
+          <div class = "field">
+            <div class = "control">
+                <label class = "radio">
+                  <input type = "radio" name = "question">
+                  Yes
+                </label>
+                <label class = "radio">
+                  <input type = "radio" name = "question">
+                  No
+                </label>
+            </div> -->
+          <!-- </div>
+          
+          <span class = "is-size-5">
+            
+</span>
+    
+      </section>
+          <section class="hero is-light">
+              <div class="hero-body">
+                <div class="container has-text-centered">
+            
+                  <p class="control uploader">
+                    <a class="button button is-dark is-fullwidth is-medium">
+                      <span class="icon is-small">
+                      <i class="fas fa-upload"></i>
+                      </span>
+                      <span>Upload image</span>
+                      <input type="file" accept="image/*" onchange="showMyImage(this)" value="" class="button button is-dark chooseFile" />
+                  </a>
+                  </p>
+                </div>
+                Image preview
+                <div class="field">
+                  <img id="thumbnail" src="" alt="image-preview-here" />
+                </div>
+              </span> -->
+              <div class = "field is-grouped">
+                <div class = "control">
+                    <button class = "button is-link" id = "submit">Submit</button>
+                </div>
+              </div>
+              </div>
+            </section>
+            <section class="has-text-centered hero is-dark">
+            </section>
+          </section>
+      
+        <!-- <script>
+          function showMyImage(fileInput) {
+          var files = fileInput.files;
+          for (var i = 0; i < files.length; i++) {
+          var file = files[i];
+          var imageType = /image.*/;
+          if (!file.type.match(imageType)) {
+            continue;
+          }
+          var img = document.getElementById("thumbnail");
+          img.file = file;
+          var reader = new FileReader();
+          reader.onload = (function(img) {
+            return function(ex) {
+              img.src = ex.target.result;
+            };
+          })(img);
+          reader.readAsDataURL(file);
+          }}
+        </script> -->
+ </form>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript" src="js/upload.js"></script>
+</body>
+
+</html>
